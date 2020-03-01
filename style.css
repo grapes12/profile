@@ -47,5 +47,22 @@ a:hover{
   color: #6d7275;
 }
 
+@media (max-width: 1600px){
+
+  body {
+    height: 700vh;
+  }
+
+}
+
+@media (max-width: 980px){
+
+  body {
+    background-image: none;
+    background-color: rgba(0,0,0,0.9);
+    height: 700vh;
+  }
+
+}
 
 
