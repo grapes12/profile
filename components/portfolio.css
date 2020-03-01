@@ -55,7 +55,9 @@
 }
 
 @media (max-width: 980px){
-
+  .cards {
+    justify-content: center;
+  }
 
   .card h3 {
     font-size: 14px;
