@@ -56,11 +56,20 @@
 }
 
 @media (max-width: 980px){
+<<<<<<< HEAD
   .cards {
     grid-template-columns: 1fr;
     grid-gap: 0;
   }
 
+=======
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+
+>>>>>>> 9a642f889b741716e7ec81fa3796af52b314c031
   .card h3 {
     font-size: 14px;
   }
@@ -69,4 +78,12 @@
     font-size: 16px;
   }
 
+<<<<<<< HEAD
+=======
+  .card {
+    grid-gap: 0;
+    margin-top: 20px;
+  }
+
+>>>>>>> 9a642f889b741716e7ec81fa3796af52b314c031
 }
