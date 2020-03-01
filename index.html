@@ -4,34 +4,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kevan's Profile</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700i|Raleway:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div class = 'background'>
-    <div class='nav-bar'>
-      <ul class = 'icons'>
-        <li><a href="#">Home</a></li>
-        <li><a href="./about/about.html">About Me</a></li>
-        <li><a href="./about/portfolio.html">Portfolio</a></li>
-      </ul>
-    </div>
-    <img class='profile-picture' src="./images/kevan.jpg" >
-    <div class = 'welcome'>
-      <h1>Hello.</h1>
-      <h2>I'm <em>Kevan</em>, <br><br> A former supermarket manager turned Full Stack Developer.</h2>
-      <br>
-      <a href="./about/about.html" class = 'home-find-out-more'>Find Out More</a>
-    </div>
-    <footer id ="contact">
-      <ul>
-        <li><i class="fas fa-mobile-alt"></i> +65 98229901</li>
-        <li><i class="fas fa-envelope"></i> kevankohjinwen@gmail.com</li>
-        <div class='icon'><li><a href="https://www.linkedin.com/in/kevankoh/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li></div>
-        <div class='icon'><li><a href="https://github.com/grapes12" target="_blank"><i class="fab fa-github"></i> Github</a></li></div>
-      </ul>
-    </footer>
-
+  <div class='nav-bar'>
+    <ul class = 'icons'>
+      <li><a class='active' href="#">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
   </div>
+  <div class="content-full">
+    <div class="content">
+      <img class='profile-picture' src="./images/kevan.jpg" >
+
+      <div class = 'welcome welcome-first'>
+        <h1>Hello.</h1>
+        <h2>I'm <em>Kevan,</em></h2>
+        <h2>A business major turned Full Stack Developer.</h2>
+        <a href="#" class = 'welcome-button'>Find Out More</a>
+      </div>
+        <div id="about"></div>
+        <div class="welcome about">
+          <h2>About me:</h2>
+          <p>Majored in Business at National University of Singapore and worked as a supermarket branch manager for 2 years until I came across Le Wagon, a coding bootcamp. Dedicating myself to learning web development ever since.</p>
+          <img src="./images/lewagon.png">
+          <br>
+          <a id='about-link' href="http://www.lewagon.com" target="_blank">About Le Wagon</a>
+          <div class="skills">
+            <h3>Skills</h3>
+            <p>HTML5 | CSS3 | JavaScript | NodeJS | Ruby | ReactJS | Ruby on Rails | SQL | ActiveRecord | Git </p>
+          </div>
+        </div>
+
+      <div id="portfolio"></div>
+      <div class="welcome portfolio">
+        <h2>Portfolio</h2>
+        <h3>Personal Projects</h3>
+          <div class="card">
+            <img src="./images/whattoeat.jpg">
+            <a href="http://grapes12.github.io/randomsgfood" target="_blank">What To Eat: A random Singapore food generator</a>
+            <p><em>Jan 2020</em></p>
+            <p>Skills used: ReactJS | NodeJS | HTML | CSS </p>
+          </div>
+
+
+        <h3 class="lewagon">Le Wagon Projects</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="./images/jukebox_sinatra.png">
+            <h3>Jukebox Sinatra</h3>
+            <p>Skills used: Ruby | Sinatra | SQL | HTML | CSS </p>
+          </div>
+
+          <div class="card">
+            <img src="./images/sinatra_hackernews.png">
+            <h3>Hackernews Clone</h3>
+            <p>Skills used: Ruby | Sinatra | SQL | HTML | CSS </p>
+          </div>
+
+          <div class="card">
+            <img src="./images/slack_copycat.png">
+            <h3>Slack Copycat</h3>
+            <p>Skills used: HTML | CSS </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <footer id ="contact">
+    <ul class='footer-elements'>
+      <div class="mail">
+        <li><a href="mailto:kevankohjinwen@gmail.com" class=""><i class="fas fa-envelope"></i> Email</a></li>
+      </div>
+      <div class='icon'><li><a href="https://www.linkedin.com/in/kevankoh/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li></div>
+      <div class='icon'><li><a href="https://github.com/grapes12" target="_blank"><i class="fab fa-github"></i> Github</a></li></div>
+    </ul>
+  </footer>
+
 </body>
 </html>
