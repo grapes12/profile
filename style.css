@@ -59,6 +59,7 @@ p {
   font-size: 60px;
   bottom: 30;
   left: 30;
+  z-index: 10;
 }
 
 .dark {
@@ -82,8 +83,9 @@ p {
 
 @media (max-width: 768px){
   .far.lightbulb-active {
-    bottom: 10;
-    left: 10;
+    bottom: 5;
+    left: 5;
+    font-size: 30px;
 }
 
 }
