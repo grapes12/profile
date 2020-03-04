@@ -1,67 +1,85 @@
-
-@import './components/nav_bar.css';
-@import './components/footer.css';
-@import './components/welcome.css';
-@import './components/about.css';
-@import './components/portfolio.css';
+@import './css/cards.css';
+@import './css/portfolio.css';
+@import './css/nav-bar.css';
 
 
 body {
+  transition: 0.3s;
+  background-color: #fcdebe;
+  font-family: 'Lato';
+}
+
+body.darken {
+  transition: 0.3s;
+  background-color: #0d1321;
+}
+
+
+h1, h2, h3, h4, p, a {
+  margin: 0;
+}
+
+h2, h3 {
   font-family: 'Raleway';
-  text-align: center;
-  background-image: url("./images/background2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 500vh;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, p, a {
-  margin: 0;
-  padding: 0  ;
-}
-
-h1 {
-  font-size: 48px;
-}
-
-h2 {
-
-  font-size: 24px;
 }
 
 p {
-  font-family: 'Lato';
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 18px;
 }
 
-a {
+.welcome {
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.welcome-div h3 {
+  margin-top: 60px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+}
+
+.far.lightbulb-active {
+  position: absolute;
+  font-size: 60px;
+  bottom: 30;
+  left: 30;
+}
+
+.dark {
   color: white;
-  text-decoration: none;
-  font-weight:bolder;
 }
 
-a:hover{
-  color: #6d7275;
+.lightbulb-inactive {
+  display: none;
 }
 
+@media (max-width: 1200px){
+.welcome {
+  font-size: 32px;
+  margin-top: 30px;
+}
 
-@media (max-width: 1600px){
+.welcome-div h3 {
+  margin-top: 30px
+  }
+}
 
-  body {
-    height: 700vh;
+@media (max-width: 500px){
+.welcome {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.child-1 h3 {
+    font-size: 20px;
   }
 
+.button-bottom {
+  font-size: 20px;
+  margin-top: 10px;
 }
-
-@media (max-width: 980px){
-
-  body {
-    height: 700vh;
-  }
-
 }
-
-

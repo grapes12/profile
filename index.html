@@ -1,90 +1,87 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kevan's Profile</title>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Raleway:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Raleway:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class='nav-bar'>
-    <ul class = 'icons'>
-      <li><a class='active' href="#">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
+    <ul class='icons'>
+      <li><a href="mailto:kevankohjinwen@gmail.com" class=""><i class="fas fa-envelope"></i> Email</a></li>
+      <li><a href="https://www.linkedin.com/in/kevankoh/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+      <li><a href="https://github.com/grapes12" target="_blank"><i class="fab fa-github"></i> Github</a></li>
     </ul>
   </div>
-  <div class="content-full">
-    <div class="content">
-      <img class='profile-picture' src="./images/kevan.jpg" >
 
-      <div class = 'welcome welcome-first'>
-        <h1>Hello.</h1>
-        <h2>I'm <em>Kevan,</em></h2>
-        <h2>A business major turned Full Stack Developer.</h2>
+    <div class="parent">
 
-        <a href="#about" class = 'welcome-button'>Find Out More</a>
+      <div class="child child-1 active">
+        <img class='image-circle' src="./images/kevan.jpg">
+        <div class="container-text">
+          <div class="welcome-div">
+            <h2 class='welcome'>Hello.</h2>
+            <h3>I'm Kevan, a business major turned full stack developer.</h3>
+          </div>
 
-      </div>
-      <div id="about"></div>
-      <div class="welcome about">
-        <h2>About me:</h2>
-        <p>Majored in Business at National University of Singapore and worked as a supermarket branch manager for 2 years until I came across Le Wagon, a coding bootcamp. Dedicating myself to learning web development ever since.</p>
-        <img src="./images/lewagon.png">
-        <br>
-        <a id='about-link' href="http://www.lewagon.com" target="_blank">About Le Wagon</a>
-        <div class="skills">
-          <h3>Skills</h3>
-          <p>HTML5 | CSS3 | JavaScript | NodeJS | Ruby | ReactJS | Ruby on Rails | SQL | ActiveRecord | Git </p>
+          <h4 class='button-bottom'>Click anywhere to swipe between cards!</h4>
         </div>
       </div>
 
-      <div id="portfolio"></div>
-      <div class="welcome portfolio">
-        <h2>Portfolio</h2>
-        <h3>Personal Projects</h3>
-        <div class="card">
-          <img src="./images/whattoeat.jpg">
-          <a href="http://grapes12.github.io/randomsgfood" target="_blank">What To Eat: A random Singapore food generator</a>
-          <p><em>Jan 2020</em></p>
-          <p>Skills used: ReactJS | NodeJS | HTML | CSS </p>
-        </div>
-
-
-        <h3 class="lewagon">Le Wagon Projects</h3>
-        <div class="cards">
-          <div class="card">
-            <img src="./images/jukebox_sinatra.png">
-            <h3>Jukebox Sinatra</h3>
-            <p>Skills used: Ruby | Sinatra | SQL | HTML | CSS </p>
-          </div>
-
-          <div class="card">
-            <img src="./images/sinatra_hackernews.png">
-            <h3>Hackernews Clone</h3>
-            <p>Skills used: Ruby | Sinatra | SQL | HTML | CSS </p>
-          </div>
-
-          <div class="card">
-            <img src="./images/slack_copycat.png">
-            <h3>Slack Copycat</h3>
-            <p>Skills used: HTML | CSS </p>
+      <div class="child child-2">
+        <h2 class='first-text '>About Me: </h2>
+        <img src="./images/book.png" alt="" class="image-square">
+        <div class="container-text container-second">
+          <p>Majored in Business at National University of Singapore and worked as a supermarket branch manager for 2 years until I came across Le Wagon, a coding bootcamp. Dedicating myself to learning web development ever since.</p>
+          <a href="http://www.lewagon.com" target='_blank'>About Le Wagon</a>
+          <div class="skills">
+            <h2>Skills</h2>
+            <p>HTML5 | CSS3 | JavaScript | AJAX | NodeJS | Ruby | ReactJS | Ruby on Rails | SQL | ActiveRecord | Git </p>
           </div>
         </div>
 
       </div>
 
+      <div class="child child-3">
+        <h2 class='first-text '>Portfolio: </h2>
+        <img src="./images/portfolio.png" alt="" class="image-square">
+        <div class="container-third">
+          <div class="projects">
+            <img src="./images/whattoeat.jpg" alt="whattoeat">
+            <p><em>Jan 2020</em></p>
+            <p>ReactJS | NodeJS | HTML | CSS </p>
+            <a href="http://grapes12.github.io/randomsgfood" target="_blank">What To Eat</a>
+          </div>
+
+
+          <div class="projects">
+            <img src="./images/chatroom.png" alt="chatroom">
+            <p><em>Le Wagon Project</em></p>
+            <p>Bootstrap | HTML | CSS | JavaScript | AJAX </p>
+            <a href="./images/chatroom.png" target='_blank'>Chat Room</a>
+          </div>
+
+          <div class="projects">
+            <img src="./images/form.png" alt="form-validation">
+            <p><em>Le Wagon Project</em></p>
+            <p>Bootstrap | HTML | CSS | JavaScript</p>
+            <a href="./images/form.png" target='_blank'>Validation Form</a>
+          </div>
+
+          <div class="projects">
+            <img src="./images/sinatra_hackernews.png" alt="sinatra_hackernews">
+            <p><em>Le Wagon Project</em></p>
+            <p>Ruby | Sinatra | SQL | HTML | CSS </p>
+            <a href="./images/sinatra_hackernews.png" target='_blank'>Hackernews Clone</a>
+          </div>
+
+
+
+        </div>
+      </div>
     </div>
-  </div>
-  <footer id ="contact">
-    <ul class='footer-elements'>
-      <div class="mail">
-        <li><a href="mailto:kevankohjinwen@gmail.com" class=""><i class="fas fa-envelope"></i> Email</a></li>
-      </div>
-      <div class='icon'><li><a href="https://www.linkedin.com/in/kevankoh/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li></div>
-      <div class='icon'><li><a href="https://github.com/grapes12" target="_blank"><i class="fab fa-github"></i> Github</a></li></div>
-    </ul>
-  </footer>
+    <i class="far fa-lightbulb lightbulb-active "></i>
+  <script src="main.js"></script>
 </body>
 </html>
