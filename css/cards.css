@@ -166,10 +166,12 @@ a:hover {
 @media (max-width: 500px){
   .parent {
     bottom: 0;
-    left: -195px;
+    left: -150px;
   }
+
+
   .child {
-    width: 250px;
+    width: 160px;
     height: 400px;
   }
 
@@ -187,11 +189,9 @@ a:hover {
   .text {
     margin: 5px;
   }
-  .container-text{
-    height: 150px;
-  }
 
-  .container-text p {
+
+  .container-text p, .container-text a {
     font-size: 14px;
     margin-top: 10px;
     }
@@ -207,10 +207,9 @@ a:hover {
   }
 
   .container-text {
-    height: 250px;
+    height: 350px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
   }
 
 }

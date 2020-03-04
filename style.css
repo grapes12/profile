@@ -91,7 +91,7 @@ p {
 @media (max-width: 500px){
 .welcome {
   font-size: 24px;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .child-1 h3 {
