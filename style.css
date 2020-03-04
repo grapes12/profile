@@ -71,7 +71,7 @@ p {
   }
 }
 
-@media (max-width: 500px){
+/*@media (max-width: 500px){
 .welcome {
   font-size: 24px;
   margin-top: 10px;
@@ -85,4 +85,4 @@ p {
   font-size: 20px;
   margin-top: 10px;
 }
-}
+}*/
