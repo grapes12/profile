@@ -60,9 +60,12 @@
 }
 
 .parent {
+
   position: relative;
-  margin-top: calc(50vh - 350px);
-  margin-left: calc(50vw - 300px);
+/*  margin-top: calc(50vh - 300px);
+  margin-left: calc(50vw - 350px);*/
+  top: -350px;
+  left: -300px;
 }
 
 .text {
@@ -107,10 +110,12 @@ a:hover {
 
 
 
+
+
 @media (max-width: 1200px){
   .parent {
-    margin-top: calc(50vh - 250px);
-    margin-left: calc(50vw - 240px);
+    left: -200px;
+    top: -250px;
   }
   .child {
     width: 300px;
@@ -158,14 +163,14 @@ a:hover {
 }
 
 
-/*@media (max-width: 500px){
+@media (max-width: 500px){
   .parent {
-    margin-top: calc(50vh - 200px);
-    margin-left: calc(50vw - 210px);
+    bottom: 0;
+    left: -195px;
   }
   .child {
     width: 250px;
-    height: 300px;
+    height: 400px;
   }
 
   .image-circle {
@@ -208,4 +213,4 @@ a:hover {
     justify-content: space-between;
   }
 
-}*/
+}
