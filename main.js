@@ -3,6 +3,8 @@ const one = document.querySelector('.child-1');
 const two = document.querySelector('.child-2');
 const three = document.querySelector('.child-3');
 
+const container = document.querySelector('.container')
+
 const lightbulb = document.querySelector('.far');
 const body = document.querySelector('body');
 const navBar = document.querySelector('.nav-bar')
@@ -10,10 +12,9 @@ const navBar = document.querySelector('.nav-bar')
 lightbulb.addEventListener('click', (event) => {
   lightbulb.classList.toggle('dark');
   body.classList.toggle('darken');
-  navBar.classList.toggle('darken')
 });
 
-document.addEventListener('click', (event) => {
+container.addEventListener('click', (event) => {
   if (event.target !== lightbulb) {
     const changeZIndex = () => {
       if (three.style.zIndex === "-2") {
